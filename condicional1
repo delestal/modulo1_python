@@ -1,0 +1,19 @@
+edad= ""
+while not edad.isdigit() or int(edad) <= 0:
+    edad = input("Dame la edad del usuario: ")
+
+# Evaluar la edad usando if-elif-else
+edad = int(edad)
+    
+# Evaluar la edad usando if-elif-else
+if edad >= 65: 
+    mensaje = "adulto mayor"
+elif edad >= 18:
+    mensaje = "adulto"
+elif edad >= 13:
+    mensaje = "adolescente"
+else:
+    mensaje = "niño"
+
+# Mostrar el mensaje correspondiente
+    print(f"Eres un {mensaje}" if edad>0 else f"Es un {mensaje}")
