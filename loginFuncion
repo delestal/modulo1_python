@@ -1,0 +1,15 @@
+EMAIL = admin@gmail.com
+PASSWORD = admin
+
+def login():
+    correcto = False
+    num_intentos = 3
+    while num_intentos >0 and not correcto:
+        email = input("Introduce el email: ").strip()
+        password = input("Introduce la contraseña: ").strip()
+        num_intentos -= 1
+        if email == EMAIL and password == PASSWORD:
+            correcto = True
+        else:
+            print("Incorrecto el email o la contraseña, te quedan {num_intentos} intentos")
+        

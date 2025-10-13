@@ -1,0 +1,17 @@
+customer = {
+"id": 1,
+"name": "John Doe",
+"age": 30,
+"is_verified": True,
+"balance": 100.5,
+"tags": ["premium", "active"],
+"address": {
+"street": "123 Main St",
+"city": "Anytown",
+"zip": "12345"
+}
+}
+customer["address"]["street"] = "Constitucion 6"
+print(customer)
+customer["address"].update({"street": "Catedral 7"})
+print(customer)
