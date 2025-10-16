@@ -1,0 +1,21 @@
+class Libro:
+    def __init__(self, titulo, autor, numPag=100):
+        self.titulo = titulo
+        self.autor = autor
+        self.numPag = numPag
+       
+    def mostrar_info(self):
+            print(f"Título: {self.titulo}")
+            print(f"Autor: {self.autor}")
+            print(f"Número de páginas: {self.numPag}")
+            
+    def cerrar(self):
+        self.abierto = False
+        print(f"Se ha cerrado el libro {self.titulo}")
+        
+    
+mi_libro = Libro("Piratas", "Reyes", 200)
+nuevo_libro = Libro("Quijote", "Cervantes")
+
+mi_libro.mostrar_info()
+nuevo_libro.mostrar_info()
