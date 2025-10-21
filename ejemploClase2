@@ -1,0 +1,18 @@
+class Ciudadano:
+    def __init__(self, id, nombre, apellido, edad)
+
+class DNI:
+    def __init__(self, id, numero):
+
+class Departamento:
+    def __init__(self, id, nombre, ubicacion)
+        self.id = id
+        self.nombre = nombre
+        self.ubicacion = ubicacion
+
+class Profesor:
+    def __init__(self, id, nombre, especialidad, departamento)
+        self.id = id
+        self.nombre = nombre
+        self.especialidad = especialidad
+        self.departamento = departamento
